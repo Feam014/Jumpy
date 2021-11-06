@@ -12,7 +12,7 @@ public class Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        protecc.SetActive(true);
+        protecc.SetActive(true); //Ignore this stuff it was for an old feature i couldnt code it in
         protecc2.SetActive(true);
     }
 
@@ -31,7 +31,7 @@ public class Controller : MonoBehaviour
             protecc2.SetActive(true);
         }
 
-        float xDirection = Input.GetAxis("Horizontal");
+        float xDirection = Input.GetAxis("Horizontal"); //This is the part you should focus on
 
         Vector3 moveDirection = new Vector3(xDirection, 0.0f, 0.0f);
 
